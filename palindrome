@@ -1,0 +1,28 @@
+	public class palindrome{
+	    public static void main(String[] args) {
+	        String[] words = {"abc", "bcd", "aba", "cfg", "madam"};
+	        
+	        for (String word : words) {
+	            if (isPalindrome(word)) {
+	                System.out.println("First palindromic string: " + word);
+	                return; 
+	            }
+	        }
+	        System.out.println("No palindromic string found");
+	    }
+	    
+	    public static boolean isPalindrome(String str) {
+	        int left = 0;
+	        int right = str.length() - 1;
+	        
+	        while (left < right) {
+	            if (str.charAt(left) != str.charAt(right)) {
+	                return false;
+	        }
+	        return true; 
+	    }
+			return false;
+	}
+
+
+}
